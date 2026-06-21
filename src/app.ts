@@ -27,8 +27,8 @@ app.get('/api/evaluation', (req, res) => {
   res.json({
     candidateName: 'Samiera R Nair',
     email: 'samierarnair@gmail.com',
-    repositoryUrl: 'https://github.com/your-username/your-repo',
-    deployedUrl: 'https://your-app.onrender.com',
+    repositoryUrl: 'https://github.com/samiera12/meeting-intelligence-service',
+    deployedUrl: 'https://meeting-intelligence-service-dn5p.onrender.com',
     externalIntegration: 'Resend (Email API)',
     features: [
       'Authentication (JWT)',
