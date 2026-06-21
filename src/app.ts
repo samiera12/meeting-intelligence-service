@@ -8,7 +8,7 @@ import { errorHandler } from './middleware/errorHandler';
 import authRoutes from './modules/auth/auth.routes';
 import meetingsRoutes from './modules/meetings/meetings.routes';
 import actionItemsRoutes from './modules/actionItems/actionItems.routes';
-import { startScheduler, runReminderJob } from './services/scheduler.service';
+import { startScheduler } from './services/scheduler.service';
 import swaggerUi from 'swagger-ui-express';
 import { swaggerSpec } from './config/swagger';
 

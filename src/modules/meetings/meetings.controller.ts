@@ -17,7 +17,7 @@ export async function create(req: Request, res: Response, next: NextFunction) {
 export async function analyze(req: Request, res: Response, next: NextFunction) {
   try {
     const userId = req.user!.userId;
-    const result = await meetingsService.analyzeMeeting(req.params.id, userId, req.traceId);
+    const result = await meetingsService.analyzeMeeting(req.params.id as string, userId, req.traceId);
     success(res, req.traceId, result);
   } catch (err) {
     next(err);
@@ -38,7 +38,7 @@ export async function list(req: Request, res: Response, next: NextFunction) {
 export async function getById(req: Request, res: Response, next: NextFunction) {
   try {
     const userId = req.user!.userId;
-    const meeting = await meetingsService.getMeetingById(req.params.id, userId);
+    const meeting = await meetingsService.getMeetingById(req.params.id as string, userId);
     success(res, req.traceId, meeting);
   } catch (err) {
     next(err);
