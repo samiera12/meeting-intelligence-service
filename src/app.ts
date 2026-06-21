@@ -29,6 +29,7 @@ app.get('/api/evaluation', (req, res) => {
     email: 'samierarnair@gmail.com',
     repositoryUrl: 'https://github.com/samiera12/meeting-intelligence-service',
     deployedUrl: 'https://meeting-intelligence-service-dn5p.onrender.com',
+    mobileAppUrl: 'https://expo.dev/accounts/samiera/projects/meeting-intelligence/builds/09346d72-320f-4fa3-b4fd-ed4dbd8a4e02',
     externalIntegration: 'Resend (Email API)',
     features: [
       'Authentication (JWT)',
@@ -39,6 +40,7 @@ app.get('/api/evaluation', (req, res) => {
       'Overdue Detection',
       'Scheduled Reminder Job',
       'Email Integration (Resend)',
+      'React Native (Expo) Mobile Client',
     ],
   });
 });
